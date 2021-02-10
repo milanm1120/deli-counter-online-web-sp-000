@@ -1,24 +1,24 @@
 # Write your code here.
 katz_deli = []
 
-def line(line)
-  case line.size
+def line(katz_deli)
+  case katz_deli.size
   when 0
     puts "The line is currently empty."
   else
-    customers = "The line is currently:"
+    line = "The line is currently:"
     counter = 0
-    line.each do |person|
-      counter += 1
-      customers << " #{counter}. #{person}"
+    katz_deli.each do |name|
+      counter +=1
+      line << " #{counter}. #{name}"
     end
-      puts customers
+    puts line
   end
 end
 
 def take_a_number(katz_deli, name)
-    katz_deli << name
-    puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
+  katz_deli<<name
+  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 
 def now_serving(katz_deli)
