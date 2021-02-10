@@ -6,11 +6,11 @@ def line(katz_deli)
   when 0
     puts "The line is currently empty."
   else
-    line = "The line is currently:"
+    line = []
     counter = 0
     katz_deli.each do |name|
       counter +=1
-      line << " #{counter}. #{name}"
+      line << "The line is currently: #{counter}. #{name}"
     end
     puts line
   end
